@@ -75,6 +75,7 @@
 <!ENTITY menu.label.ftp.anime "Аниме">
 <!ENTITY menu.label.portal "Портал">
 <!ENTITY menu.label.serials "Сериалы">
+<!ENTITY menu.label.tracker "Торрент-трекер">
 
 
 <!ENTITY groupbox.caption.notification "Уведомления">
