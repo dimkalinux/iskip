@@ -73,6 +73,7 @@
 <!ENTITY menu.label.ftp.hdtv "Фильмы в HD-качестве">
 <!ENTITY menu.label.ftp.serial "Сериалы">
 <!ENTITY menu.label.ftp.anime "Аниме">
+<!ENTITY menu.label.portal "Портал">
 
 
 <!ENTITY groupbox.caption.notification "Уведомления">

@@ -60,6 +60,10 @@
 			<menuitem label="&menu.label.home;" class="menuitem-iconic" id="iskip-menu-home"
 				oncommand="smart_open_url(ISKIP_URL_HOME);"/>
 
+			<menuitem label="&menu.label.portal;" oncommand="smart_open_url(ISKIP_URL_PORTAL);"
+				class="menuitem-iconic"
+				image="chrome://iskip/skin/classic/menuicons/portal.png"/>
+
 			<menuitem label="&menu.label.forum;" oncommand="smart_open_url(ISKIP_URL_FORUM);"
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/forum.png"/>
