@@ -66,6 +66,7 @@ const ISKIP_URL_FORUM = "http://forum.lluga.net/";
 const ISKIP_URL_PORTAL = "http://portal.iteam.net.ua/";
 const ISKIP_URL_SERIALS = "http://serial.iteam.net.ua/";
 const ISKIP_URL_TRACKER = "http://torrents.iteam.net.ua/";
+const ISKIP_URL_GAME_WEB = "http://play.iteam.net.ua/";
 const ISKIP_URL_HOSTING = "https://hosting.iteam.lg.ua/";
 const ISKIP_URL_HOSTING_ORDER = "https://stat.lluga.net/hosting.php";
 const ISKIP_URL_HOSTING_CPANEL = "https://hosting.iteam.lg.ua:2083/";

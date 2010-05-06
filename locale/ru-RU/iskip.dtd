@@ -76,6 +76,7 @@
 <!ENTITY menu.label.portal "Портал">
 <!ENTITY menu.label.serials "Сериалы">
 <!ENTITY menu.label.tracker "Торрент-трекер">
+<!ENTITY menu.label.game_web "Игровой сервер">
 
 
 <!ENTITY groupbox.caption.notification "Уведомления">

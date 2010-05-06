@@ -77,6 +77,8 @@
 				image="chrome://iskip/skin/classic/menuicons/up.png"/>
 
 			<menuitem label="&menu.label.tracker;" oncommand="smart_open_url(ISKIP_URL_TRACKER);"/>
+			<menuitem label="&menu.label.game_web;" oncommand="smart_open_url(ISKIP_URL_GAME_WEB);"/>
+
 			<menuitem label="&menu.label.kino;" oncommand="smart_open_url(ISKIP_URL_KINO);"/>
 
 			<menuitem label="&menu.label.stat;" oncommand="smart_open_url(ISKIP_URL_STAT);"
