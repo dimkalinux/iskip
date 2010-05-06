@@ -77,6 +77,8 @@
 <!ENTITY menu.label.serials "Сериалы">
 <!ENTITY menu.label.tracker "Торрент-трекер">
 <!ENTITY menu.label.game_web "Игровой сервер">
+<!ENTITY menu.label.fafa "ФаФа">
+<!ENTITY menu.label.iptv "IPTV">
 
 
 <!ENTITY groupbox.caption.notification "Уведомления">
