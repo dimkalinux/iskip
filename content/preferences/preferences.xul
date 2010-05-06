@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<?xml-stylesheet href="chrome://mozapps/content/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://iskip/locale/iskip.dtd">
+
+<prefwindow id="iskip-prefs-window"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&pref.windowtitle;"
+	ondialogcancel="return iSkip.pref.checkOptions();"
+	lastSelected="iskip-watch-pane">
+
+	<stringbundleset id="iskip-strbundles">
+		<stringbundle id="iskip-strings" src="chrome://iskip/locale/iskip.properties"/>
+	</stringbundleset>
+
+
+	<prefpane id="iskip-watch-pane"
+		label="&pref.pane.watch;"
+		image="chrome://iskip/skin/classic/preferences/emblem-system.png">
+		<preferences>
+			<preference id="extensions.iskip.username" name="extensions.iskip.username" type="string"/>
+			<preference id="extensions.iskip.rememberPassword" name="extensions.iskip.rememberPassword" type="bool"/>
+			<preference id="extensions.iskip.watch_debit" name="extensions.iskip.watch_debit" type="bool"/>
+			<preference id="extensions.iskip.watch_up" name="extensions.iskip.watch_up" type="bool"/>
+			<preference id="extensions.iskip.watch_cinema" name="extensions.iskip.watch_cinema" type="bool"/>
+			<preference id="extensions.iskip.watch_film" name="extensions.iskip.watch_film" type="bool"/>
+			<preference id="extensions.iskip.watch_ip" name="extensions.iskip.watch_ip" type="bool"/>
+		</preferences>
+		<vbox>
+			<groupbox orient="vertical">
+				<caption label="&groupbox.caption.watch;"/>
+				<checkbox id="iskip-watch-debit"
+					preference="extensions.iskip.watch_debit"
+					label="&pref.watch.debit;"
+					onsyncfrompreference="iSkip.pref.updateGroupedUI('iskip-watch-debit', 'watcher-debit');"/>
+
+			<grid style="margin-bottom: 10px;">
+    				<columns><column/>
+      				<column flex="1"/></columns>
+    				<rows>
+      					<row align="center">
+						<label control="iskip-username" value="&pref.username;"/>
+						<textbox id="iskip-username"
+							onchange="iSkip.pref.accountChanged();"
+							preference="extensions.iskip.username"
+							maxlength="14"
+							tabindex="1"
+							group="watcher-debit"/>
+					</row>
+					<row align="center">
+						<label control="iskip-password" value="&pref.password;"/>
+						<textbox id="iskip-password"
+							type="password"
+							maxlength="10"
+							onchange="iSkip.pref.accountChanged();"
+							tabindex="2"
+							group="watcher-debit"/>
+					</row>
+					<row>
+						<spacer/>
+						<checkbox id="iskip-storePassword"
+							label="&pref.remember;"
+							preference="extensions.iskip.rememberPassword"
+							tabindex="3"
+							group="watcher-debit"/>
+					</row>
+				</rows>
+			</grid>
+
+
+				<spacer flex="1"/>
+				<spacer flex="1"/>
+				<spacer flex="1"/>
+				<checkbox id="iskip-watch-up" preference="extensions.iskip.watch_up" label="&pref.watch.up;"/>
+				<checkbox id="iskip-watch-film" preference="extensions.iskip.watch_film" label="&pref.watch.film;"/>
+				<checkbox id="iskip-watch-cinema" preference="extensions.iskip.watch_cinema" label="&pref.watch.cinema;"/>
+			</groupbox>
+		</vbox>
+	</prefpane>
+
+	<prefpane id="iskip-notification-pane"
+		label="&pref.pane.notification;"
+		image="chrome://iskip/skin/classic/preferences/emblem-generic.png">
+		<preferences>
+			<preference id="extensions.iskip.alert_info_debit_limit" name="extensions.iskip.alert_info_debit_limit" type="int"/>
+			<preference id="extensions.iskip.notification.on.end.month" name="extensions.iskip.notification.on.end.month" type="bool"/>
+			<preference id="extensions.iskip.notification.on.badweather" name="extensions.iskip.notification.on.badweather" type="bool"/>
+		</preferences>
+		<vbox>
+			<groupbox>
+			<caption label="&groupbox.caption.notification;"/>
+			<grid>
+    				<columns><column/>
+      				<column flex="1"/></columns>
+    				<rows>
+					<row align="center">
+						<label control="iskip-alertDebit" value="&menu.label.alert.debit;"/>
+						<menulist id="iskip-alertDebit" preference="extensions.iskip.alert_info_debit_limit" group="watcher-debit">
+							<menupopup>
+								<menuitem value="0" label="&menu.label.alert.debit.never;"/>
+								<menuitem value="5" label="&menu.label.alert.debit.5;"/>
+								<menuitem value="10" label="&menu.label.alert.debit.10;"/>
+								<menuitem value="25" label="&menu.label.alert.debit.25;"/>
+								<menuitem value="50" label="&menu.label.alert.debit.50;"/>
+							</menupopup>
+						</menulist>
+					</row>
+				</rows>
+			</grid>
+
+			<checkbox id="iskip.notification.on.end.month"
+				preference="extensions.iskip.notification.on.end.month"
+				label="&pref.notification.on.end.month;" group="watcher-debit"/>
+
+			<checkbox id="iskip.notification.on.badweather"
+				preference="extensions.iskip.notification.on.badweather"
+				label="&pref.notification.on.badweather;"/>
+			</groupbox>
+
+		</vbox>
+	</prefpane>
+
+	<prefpane id="iskip-advanced-pane"
+		label="&pref.pane.advanced;"
+		image="chrome://iskip/skin/classic/preferences/system-run.png">
+		<preferences>
+			<preference id="extensions.iskip.openLinksIn" name="extensions.iskip.openLinksIn" type="string"/>
+		</preferences>
+
+		<vbox>
+		<groupbox>
+			<caption label="&pref.context_menu_links;"/>
+			<radiogroup id="iskip.openLinksIn" preference="extensions.iskip.openLinksIn">
+				<radio label="&pref.context_menu_click.current_tab;" value="1"/>
+				<radio label="&pref.context_menu_click.new_tab;" value="2"/>
+				<radio label="&pref.context_menu_click.new_window;" value="3"/>
+			</radiogroup>
+		</groupbox>
+		</vbox>
+	</prefpane>
+
+
+	<script type="application/x-javascript" src="chrome://iskip/content/const.js"/>
+	<script type="application/x-javascript" src="chrome://iskip/content/utils.js"/>
+	<script type="application/x-javascript" src="chrome://iskip/content/script.js"/>
+
+	<script type="application/x-javascript">
+	  <![CDATA[
+		window.addEventListener('load', iSkip.pref.load, false);
+		window.addEventListener('load', iSkip.pref.loadFields, false);
+		window.addEventListener('unload', iSkip.pref.unload, false);
+	  ]]>
+	</script>
+
+</prefwindow>

@@ -1,0 +1,92 @@
+<!ENTITY pref.windowtitle "Настройки iSkip">
+<!ENTITY pref.context_menu_links "Открывать ссылки из меню:">
+<!ENTITY pref.context_menu_click.new_tab "в новой вкладке">
+<!ENTITY pref.context_menu_click.current_tab "в текущей вкладке">
+<!ENTITY pref.context_menu_click.new_window "в новом окне">
+<!ENTITY pref.account_info "Учётная информация">
+<!ENTITY pref.username "Логин:">
+<!ENTITY pref.password "Пароль:">
+<!ENTITY pref.remember "Сохранить пароль">
+<!ENTITY pref.watch.debit "Проверять остаток на интернет-счёте">
+<!ENTITY pref.watch.up "новые файлы на up.lluga.net">
+<!ENTITY pref.watch.cinema "новые фильмы на cinema.lds.net.ua">
+<!ENTITY pref.watch.film "новые фильмы на film.lg.ua">
+<!ENTITY pref.watch.cs "статус Counter-Strike игрового сервера">
+<!ENTITY pref.pane.watch "Главная">
+<!ENTITY pref.pane.notification "Уведомления">
+<!ENTITY pref.pane.advanced "Дополнительно">
+<!ENTITY pref.pane.dropio "Upload">
+<!ENTITY pref.notification.on.end.month "в конце месяца">
+<!ENTITY pref.notification.on.badweather "о возможной грозе">
+
+<!ENTITY menu.label.home "Айтим">
+<!ENTITY menu.label.stat "Статистика">
+<!ENTITY menu.label.stat.fin "Финансовая">
+<!ENTITY menu.label.stat.traf "По трафику">
+<!ENTITY menu.label.stat.fin.day "Финансовая за день">
+<!ENTITY menu.label.stat.fin.month "Финансовая за месяц">
+<!ENTITY menu.label.stat.traf.day.inet "Трафик за сегодня">
+<!ENTITY menu.label.stat.traf.month.inet "Трафик за месяц">
+<!ENTITY menu.label.stat.traf.day.local "Локальный трафик за сегодня">
+<!ENTITY menu.label.stat.traf.month.local "Локальный трафик за месяц">
+<!ENTITY menu.label.kino "Кинематограф">
+<!ENTITY menu.label.photo "Фото">
+<!ENTITY menu.label.radio "Радио">
+<!ENTITY menu.label.labs "Лаборатория">
+<!ENTITY menu.label.mirror "Зеркало Ubuntu">
+<!ENTITY menu.label.ftp.search "Поиск по фтп">
+<!ENTITY menu.label.ftp "Файловый сервер">
+<!ENTITY menu.label.services "Полезные сервисы">
+<!ENTITY menu.label.ftp-services "FTP сервисы">
+<!ENTITY menu.label.bases "Обновление антивирусов">
+<!ENTITY menu.label.hosting "Хостинг">
+<!ENTITY menu.label.hosting.order "Заказать хостинг">
+<!ENTITY menu.label.hosting.cpanel "Панель управления">
+<!ENTITY menu.label.portal "Портал">
+<!ENTITY menu.label.forum "Форум">
+<!ENTITY menu.label.up "Файлообменник">
+<!ENTITY menu.label.contacts "Контакты">
+<!ENTITY menu.label.email_to_admin "Написать e-mail администратору">
+<!ENTITY menu.label.email_to_support "Написать e-mail техподдержке">
+<!ENTITY menu.label.contacts_page "Страница контактов">
+<!ENTITY menu.label.support_page "Техническая поддержка">
+<!ENTITY menu.label.newup "Свежие файлы">
+<!ENTITY menu.label.newcinema "Новые фильмы (LDS)">
+<!ENTITY menu.label.newfilm "Новые фильмы">
+<!ENTITY menu.label.update "Обновить">
+<!ENTITY menu.label.preferences "Настройки">
+<!ENTITY menu.label.userinfo "Информация">
+<!ENTITY menu.label.alert.debit "Предупреждать:">
+<!ENTITY menu.label.alert.debit.never "никогда">
+<!ENTITY menu.label.alert.debit.5 "если на счету менее 5 гривен">
+<!ENTITY menu.label.alert.debit.10 "если на счету менее 10 гривен">
+<!ENTITY menu.label.alert.debit.25 "если на счету менее 25 гривен">
+<!ENTITY menu.label.alert.debit.50 "если на счету менее 50 гривен">
+<!ENTITY menu.label.pay "Пополнить счёт">
+<!ENTITY menu.label.pay.webmoney "через WebMoney">
+<!ENTITY menu.label.pay.cards "картой пополнения">
+<!ENTITY menu.label.ftp.soft "Программы">
+<!ENTITY menu.label.ftp.game "Игры">
+<!ENTITY menu.label.ftp.music "Музыка">
+<!ENTITY menu.label.ftp.journal "Журналы">
+<!ENTITY menu.label.ftp.upload "Загруженные фильмы">
+<!ENTITY menu.label.ftp.hdtv "Фильмы в HD-качестве">
+<!ENTITY menu.label.ftp.serial "Сериалы">
+<!ENTITY menu.label.ftp.anime "Аниме">
+
+
+<!ENTITY groupbox.caption.notification "Уведомления">
+<!ENTITY groupbox.caption.watch "Автоматическая проверка">
+
+<!ENTITY error.page.checkBalanceTitle "Воможно у&nbsp;вас закончились деньги на&nbsp;счету?">
+<!ENTITY error.page.checkBalanceText1 "Проверьте вашу статистику">
+<!ENTITY error.page.checkBalanceText2 "Обратитесь в&nbsp;службу техподдержки cети Айтим по телефону: 33-02-03 или 33-02-30.">
+
+<!ENTITY support.page.header "Служба поддержки Айтим">
+<!ENTITY support.page.header1 "Техподдержка сети работает по следующему графику">
+<!ENTITY support.page.text1 "Офис">
+<!ENTITY support.page.text2 "понедельник&nbsp;— суббота с&nbsp;9:00 до&nbsp;18:00">
+<!ENTITY support.page.text3 "Телефон">
+<!ENTITY support.page.text4 "33-02-03, 33-02-30&nbsp;— круглосуточно, без выходных">
+<!ENTITY support.page.text5 "Электронная почта">
+<!ENTITY support.page.text6 "Онлайн">

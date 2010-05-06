@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://iskip/locale/iskip.dtd">
+<?xml-stylesheet href="chrome://iskip/skin/classic/style.css" type="text/css"?>
+
+<overlay id="iskip_overlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://iskip/content/const.js"/>
+	<script type="application/x-javascript" src="chrome://iskip/content/utils.js"/>
+	<script type="application/x-javascript" src="chrome://iskip/content/script.js"/>
+
+   	<script type="application/x-javascript">
+	<![CDATA[
+		window.addEventListener ("load", iSkip.pref.load, false);
+		window.addEventListener ("load", iSkip.load, false);
+		window.addEventListener ("unload", iSkip.unload, false);
+	]]>
+	</script>
+
+
+
+	<statusbar id="status-bar">
+		<stringbundleset id="iskip-strbundles">
+			<stringbundle id="iskip-strings" src="chrome://iskip/locale/iskip.properties"/>
+		</stringbundleset>
+
+
+		<statusbarpanel id="iskip_panel"
+			context="iskip_menu"
+			class="statusbarpanel-iconic-text"
+			label=""
+			tooltip="iskip_tooltip"
+			onclick="iSkip.click(event)"
+			status="normal">
+		</statusbarpanel>
+
+		<tooltip id="iskip_tooltip" orient="vertical" noautohide="true">
+			<vbox id="many-string-message-box">
+				<vbox id="tip-info">
+					<hbox align="center">
+						<description id="iskip_tip_logged_as"/>
+						<description id="iskip_tip_username"/>
+					</hbox>
+					<description id="iskip_tip_debit"/>
+				</vbox>
+				<description id="iskip_tip_ip"/>
+			</vbox>
+			<vbox id="tip-message">
+				<description id="iskip_tip_onestring_message"/>
+			</vbox>
+		</tooltip>
+ 	</statusbar>
+
+
+
+
+  	<popupset>
+		<menupopup id="iskip_menu">
+			<menuitem label="&menu.label.home;" class="menuitem-iconic" id="iskip-menu-home"
+				oncommand="smart_open_url(ISKIP_URL_HOME);"/>
+
+			<menuitem label="&menu.label.forum;" oncommand="smart_open_url(ISKIP_URL_FORUM);"
+				class="menuitem-iconic"
+				image="chrome://iskip/skin/classic/menuicons/forum.png"/>
+
+			<menuitem label="&menu.label.up;" oncommand="smart_open_url(ISKIP_URL_UP);"
+				class="menuitem-iconic"
+				image="chrome://iskip/skin/classic/menuicons/up.png"/>
+
+			<menuitem label="&menu.label.kino;" oncommand="smart_open_url(ISKIP_URL_KINO);"/>
+
+			<menuitem label="&menu.label.stat;" oncommand="smart_open_url(ISKIP_URL_STAT);"
+					class="menuitem-iconic"
+					image="chrome://iskip/skin/classic/menuicons/statistics.png"/>
+
+			<menuseparator/>
+
+			<menuitem label="&menu.label.photo;" oncommand="smart_open_url(ISKIP_URL_PHOTO);"/>
+			<menuitem label="&menu.label.radio;" class="menuitem-iconic" id="iskip-menu-radio"
+				oncommand="smart_open_url(ISKIP_URL_RADIO);"/>
+
+			<menuitem label="&menu.label.ftp;" oncommand="smart_open_url(ISKIP_URL_FTP);"
+					class="menuitem-iconic" id="iskip-menu-files"/>
+
+			<menu label="&menu.label.hosting;" class="menu-iconic" id="iskip-menu-hosting">
+      			<menupopup>
+				   	<menuitem label="&menu.label.hosting.order;" class="menuitem-iconic" id="iskip-menu-hosting-order"
+							oncommand="open_url(ISKIP_URL_HOSTING_ORDER);"/>
+      				<menuitem label="&menu.label.hosting.cpanel;" class="menuitem-iconic" id="iskip-menu-hosting-cpanel"
+							oncommand="open_url(ISKIP_URL_HOSTING_CPANEL);"/>
+      			</menupopup>
+    		</menu>
+
+		<menu label="&menu.label.contacts;" class="menu-iconic" id="iskip-menu-contacts">
+      			<menupopup id="contact_menupopup">
+      				<menuitem label="&menu.label.contacts_page;" oncommand="open_url(ISKIP_URL_CONTACTS);"/>
+      				<menuitem label="&menu.label.support_page;" class="menuitem-iconic" id="iskip-menu-support"
+							oncommand="open_url(ISKIP_URL_SUPPORT);"/>
+      				<menuseparator/>
+      				<menuitem label="&menu.label.email_to_support;"
+      					oncommand="open_url('mailto:support@lluga.net');"
+      					class="menuitem-iconic"
+					image="chrome://iskip/skin/classic/menuicons/mail.png"/>
+      			</menupopup>
+    		</menu>
+
+		<menu label="&menu.label.ftp-services;" class="menu-iconic" id="iskip-menu-ftp-services">
+      			<menupopup id="ftp-services_menupopup">
+				<menuitem label="&menu.label.ftp.soft;" id="iskip-menu-ftp-soft" oncommand="smart_open_url(ISKIP_URL_FTP_SOFT);"/>
+				<menuitem label="&menu.label.ftp.game;" id="iskip-menu-ftp-game" oncommand="smart_open_url(ISKIP_URL_FTP_GAME);"/>
+				<menuitem label="&menu.label.ftp.music;" id="iskip-menu-ftp-music" oncommand="smart_open_url(ISKIP_URL_FTP_MUSIC);"/>
+				<menuitem label="&menu.label.ftp.journal;" id="iskip-menu-ftp-journal" oncommand="smart_open_url(ISKIP_URL_FTP_JOURNAL);"/>
+
+				<menuseparator/>
+
+				<menuitem label="&menu.label.ftp.upload;" id="iskip-menu-ftp-upload" oncommand="smart_open_url(ISKIP_URL_FTP_UPLOAD);"/>
+				<menuitem label="&menu.label.ftp.hdtv;" id="iskip-menu-ftp-hdtv" oncommand="smart_open_url(ISKIP_URL_FTP_HDTV);"/>
+				<menuitem label="&menu.label.ftp.serial;" id="iskip-menu-ftp-serial" oncommand="smart_open_url(ISKIP_URL_FTP_SERIAL);"/>
+				<menuitem label="&menu.label.ftp.anime;" id="iskip-menu-ftp-anime" oncommand="smart_open_url(ISKIP_URL_FTP_ANIME);"/>
+			</menupopup>
+    		</menu>
+
+		<menu label="&menu.label.services;" class="menu-iconic" id="iskip-menu-services">
+      			<menupopup id="services_menupopup">
+				<menuitem label="&menu.label.labs;" class="menuitem-iconic" id="iskip-menu-services-labs"
+							oncommand="smart_open_url(ISKIP_URL_LABS);"/>
+					<!--<menuseparator/>-->
+
+					<!--<menuitem label="&menu.label.mirror;" class="menuitem-iconic" id="iskip-menu-services-mirror"
+							oncommand="smart_open_url(ISKIP_URL_MIRROR);"/>-->
+					<!--<menuitem label="&menu.label.ftp.search;" class="menuitem-iconic" id="iskip-menu-services-ftp-search"
+							oncommand="smart_open_url(ISKIP_URL_FTP_SEARCH);"/>-->
+
+					<!--<menuitem label="&menu.label.bases;" class="menuitem-iconic" id="iskip-menu-services-bases"
+							oncommand="smart_open_url(ISKIP_URL_BASES);"/>-->
+
+
+      			</menupopup>
+    		</menu>
+
+			<menuseparator/>
+			<menu label="&menu.label.stat;" class="menu-iconic" image="chrome://iskip/skin/classic/menuicons/statistics.png">
+      				<menupopup>
+        				<menuitem label="&menu.label.stat.fin;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_fin_stat.php');"/>
+        				<menuitem label="&menu.label.stat.traf;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_traf_stat.php');"/>
+        				<menuseparator/>
+        				<menuitem label="&menu.label.stat.traf.day.inet;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_traf_stat.php?a=day&amp;t=inet&amp;make=1');"/>
+
+        				<menuitem label="&menu.label.stat.traf.day.local;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_traf_stat.php?a=day&amp;t=local&amp;make=1');"/>
+
+					<menuseparator/>
+        				<menuitem label="&menu.label.stat.traf.month.inet;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_traf_stat.php?a=month&amp;t=inet&amp;make=1');"/>
+
+        				<menuitem label="&menu.label.stat.traf.month.local;"
+        					oncommand="smart_open_url('https://stat.lluga.net/show_traf_stat.php?a=month&amp;t=local&amp;make=1');"/>
+      				</menupopup>
+    			</menu>
+    			<menu label="&menu.label.pay;" id="iskip-menu-money" class="menu-iconic">
+      				<menupopup>
+        				<menuitem label="&menu.label.pay.webmoney;"
+        					oncommand="smart_open_url(ISKIP_URL_PAY_WEBMONEY);"
+        					class="menuitem-iconic"
+							id="iskip-menu-webmoney"/>
+						<menuitem label="&menu.label.pay.cards;"
+        					oncommand="smart_open_url(ISKIP_URL_PAY_CARDS);"
+        					class="menuitem-iconic"
+							id="iskip-menu-cards"/>
+      				</menupopup>
+    			</menu>
+
+				<menuseparator/>
+
+    			<menu label="&menu.label.newup;" id="iskip-menu-up" disabled="true" hidden="true">
+      				<menupopup id="last_10_from_up_menupopup"></menupopup>
+    			</menu>
+
+    			<menu label="&menu.label.newfilm;" id="iskip-menu-film" disabled="true" hidden="true">
+      				<menupopup id="last_10_from_film_menupopup"></menupopup>
+    			</menu>
+
+    			<menu label="&menu.label.newcinema;" id="iskip-menu-cinema" disabled="true" hidden="true">
+      				<menupopup id="last_10_from_cinema_menupopup"></menupopup>
+    			</menu>
+				<menuseparator id="iskip-menu-new-separator"/>
+     			<!--<menuitem label="&menu.label.update;" oncommand="iSkip.update();"/>-->
+     			<menuitem label="&menu.label.preferences;" oncommand="iSkip.showPrefs();"
+     				class="menuitem-iconic"
+     				id="iskip-menu-preferences"/>
+   		</menupopup>
+ 	</popupset>
+</overlay>

@@ -1,0 +1,93 @@
+<!ENTITY pref.windowtitle "iSkip preferences">
+<!ENTITY pref.context_menu_links "Context menu links should be openned in">
+<!ENTITY pref.context_menu_click.new_tab "a new tab">
+<!ENTITY pref.context_menu_click.current_tab "a current tab">
+<!ENTITY pref.context_menu_click.new_window "a new window">
+<!ENTITY pref.account_info "Account">
+<!ENTITY pref.username "Username:">
+<!ENTITY pref.password "Password:">
+<!ENTITY pref.remember "Remember the password">
+<!ENTITY pref.watch.debit "Rest on internet-account">
+<!ENTITY pref.watch.up "New files on up.lluga.net">
+<!ENTITY pref.watch.cinema "New films on cinema.lds.net.ua">
+<!ENTITY pref.watch.film "New films on film.lg.ua">
+<!ENTITY pref.watch.cs "Status of our Counter-Strike game server">
+<!ENTITY pref.pane.watch "Watch">
+<!ENTITY pref.pane.notification "Notify">
+<!ENTITY pref.pane.advanced "Advanced">
+<!ENTITY pref.pane.dropio "Upload">
+<!ENTITY pref.notification.on.end.month "On the end of month">
+<!ENTITY pref.notification.on.badweather "On thunderstorm">
+
+<!ENTITY menu.label.home "Home">
+<!ENTITY menu.label.stat "Statistics">
+<!ENTITY menu.label.stat.fin "Financial">
+<!ENTITY menu.label.stat.traf "Traffic">
+<!ENTITY menu.label.stat.fin.day "Financial for a day">
+<!ENTITY menu.label.stat.fin.month "Financial for a month">
+<!ENTITY menu.label.stat.traf.day.inet "Daily internet traffic">
+<!ENTITY menu.label.stat.traf.month.inet "Monthly internet traffic">
+<!ENTITY menu.label.stat.traf.day.local "Daily local traffic">
+<!ENTITY menu.label.stat.traf.month.local "Monthly local traffic">
+<!ENTITY menu.label.kino "FILM.lg.ua">
+<!ENTITY menu.label.photo "iTeam Photo">
+<!ENTITY menu.label.radio "iTeam Radio">
+<!ENTITY menu.label.labs "Labs">
+<!ENTITY menu.label.mirror "Mirror for Ubuntu">
+<!ENTITY menu.label.ftp "File server">
+<!ENTITY menu.label.ftp.search "FTP Search">
+<!ENTITY menu.label.services "Usefull Services">
+<!ENTITY menu.label.ftp-services "FTP Services">
+<!ENTITY menu.label.bases "Antivirus Update">
+<!ENTITY menu.label.hosting "Hosting">
+<!ENTITY menu.label.hosting.order "Make order">
+<!ENTITY menu.label.hosting.cpanel "Control Panel">
+<!ENTITY menu.label.portal "Portal">
+<!ENTITY menu.label.forum "Forum">
+<!ENTITY menu.label.up "File-exchanger">
+<!ENTITY menu.label.contacts "Contacts">
+<!ENTITY menu.label.email_to_admin "Write e-mail to admininstrator">
+<!ENTITY menu.label.email_to_support "Write e-mail to support">
+<!ENTITY menu.label.contacts_page "Contacts page">
+<!ENTITY menu.label.support_page "Technical support">
+<!ENTITY menu.label.newup "Fresh files">
+<!ENTITY menu.label.newcinema "New films (LDS)">
+<!ENTITY menu.label.newfilm "New films">
+<!ENTITY menu.label.update "Update">
+<!ENTITY menu.label.preferences "Preferences">
+<!ENTITY menu.label.userinfo "User info">
+<!ENTITY menu.label.alert.debit "Show notification">
+<!ENTITY menu.label.alert.debit.never "never">
+<!ENTITY menu.label.alert.debit.5 "if rest on account is lower 5 uah.">
+<!ENTITY menu.label.alert.debit.10 "if rest on account is lower 10 uah.">
+<!ENTITY menu.label.alert.debit.25 "if rest on account is lower 25 uah.">
+<!ENTITY menu.label.alert.debit.50 "if rest on account is lower 50 uah.">
+<!ENTITY menu.label.pay "Deposit funds">
+<!ENTITY menu.label.pay.webmoney "Pay use WebMoney">
+<!ENTITY menu.label.pay.cards "Pay use prepaid card">
+<!ENTITY menu.label.ftp.soft "Software">
+<!ENTITY menu.label.ftp.game "Games">
+<!ENTITY menu.label.ftp.music "Music">
+<!ENTITY menu.label.ftp.journal "Journals">
+<!ENTITY menu.label.ftp.upload "Uploaded films">
+<!ENTITY menu.label.ftp.hdtv "Films in HD">
+<!ENTITY menu.label.ftp.serial "Serials">
+<!ENTITY menu.label.ftp.anime "Anime">
+
+
+
+<!ENTITY groupbox.caption.notification "Notification">
+<!ENTITY groupbox.caption.watch "Watch by">
+
+<!ENTITY error.page.checkBalanceTitle "Воможно у&nbsp;вас закончились деньги на&nbsp;счету?">
+<!ENTITY error.page.checkBalanceText1 "Check your balance">
+<!ENTITY error.page.checkBalanceText2 "Обратитесь в&nbsp;службу техподдержки cети iTeam by phone: 33-02-03, 33-02-30.">
+
+<!ENTITY support.page.header "Contact Support iTeam">
+<!ENTITY support.page.header1 "Техподдержка сети работает по следующему графику">
+<!ENTITY support.page.text1 "Office">
+<!ENTITY support.page.text2 "Monday&nbsp;— friday с&nbsp;9:00 до&nbsp;18:00, в&nbsp;субботу с&nbsp;10:00 до&nbsp;15:00">
+<!ENTITY support.page.text3 "Phone">
+<!ENTITY support.page.text4 "33-02-03, 33-02-30&nbsp;— 24/7">
+<!ENTITY support.page.text5 "Email">
+<!ENTITY support.page.text6 "Online">

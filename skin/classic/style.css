@@ -1,0 +1,49 @@
+#iskip_panel[status="normal"]
+{
+	list-style-image: url("chrome://iskip/skin/classic/panel-status/flag.png");
+}
+
+#iskip_panel[status="error"]
+{
+	list-style-image: url("chrome://iskip/skin/classic/panel-status/flag-red.png");
+}
+
+#iskip_panel[status="busy"]
+{
+	list-style-image: url("chrome://iskip/skin/classic/panel-status/flag-yellow.png");
+}
+
+#iskip-menu-home { list-style-image: url("chrome://iskip/skin/classic/menuicons/home.png"); }
+#iskip-menu-hosting { list-style-image: url("chrome://iskip/skin/classic/menuicons/hosting.png"); }
+#iskip-menu-hosting-cpanel { list-style-image: url("chrome://iskip/skin/classic/menuicons/cpanel.png"); }
+#iskip-menu-contacts { list-style-image: url("chrome://iskip/skin/classic/menuicons/contacts.png"); }
+#iskip-menu-support { list-style-image: url("chrome://iskip/skin/classic/menuicons/telephony.png"); }
+#iskip-menu-radio { list-style-image: url("chrome://iskip/skin/classic/menuicons/radio.png"); }
+#iskip-menu-preferences { list-style-image: url("chrome://iskip/skin/classic/menuicons/preferences.png"); }
+#iskip-menu-services-mirror { list-style-image: url("chrome://iskip/skin/classic/menuicons/mirror.png"); }
+#iskip-menu-services-ftp-search { list-style-image: url("chrome://iskip/skin/classic/menuicons/ftp-search.png"); }
+#iskip-menu-services-labs { list-style-image: url("chrome://iskip/skin/classic/menuicons/labs.png"); }
+#iskip-menu-services-bases { list-style-image: url("chrome://iskip/skin/classic/menuicons/bases.png"); }
+#iskip-menu-files { list-style-image: url("chrome://iskip/skin/classic/menuicons/files.png"); }
+#iskip-menu-money { list-style-image: url("chrome://iskip/skin/classic/menuicons/money.png"); }
+
+#iskip_tip_logged_as { margin-right: 0; }
+#iskip_tip_username { margin-left: 0; font-weight: bold; }
+
+#iskip_tip_ip
+{
+	/*margin-top: 5px;*/
+	font-size: 90% !important;
+}
+
+#iskip_tip_trafic_inet,
+#iskip_tip_trafic_local,
+#iskip_tip_cs
+{
+	font-size: 90% !important;
+}
+
+#iskip_tip_trafic_inet { margin-top: 5px; margin-bottom: 0; }
+
+
+#up_checkboxes { padding-left: 2em; }

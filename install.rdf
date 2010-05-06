@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$ihe0d3"
+                   em:locale="ru-RU"
+                   em:name="iSkip для сети Айтим"
+                   em:description="Not Y3K ready" />
+  <RDF:Description RDF:about="rdf:#$nhe0d3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.6.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="iskip@dimkalinux"
+                   em:name="iSkip for iTeam network"
+                   em:type="2"
+                   em:version="1.3.2"
+                   em:description="Not Y3K ready"
+                   em:creator="dimkalinux"
+                   em:iconURL="chrome://iskip/skin/classic/web-browser.png"
+                   em:homepageURL="http://forum.iteam.net.ua/labs/iskip/"
+                   em:updateURL="http://forum.iteam.net.ua/labs/iskip/update.rdf"
+                   em:optionsURL="chrome://iskip/content/preferences/preferences.xul"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFVsEL0r0GrB1b9Q82lyxViERwvvUm2E0sLJ0Z6OTQVaBLowSuvUPSjAo87aqYZ/tSyw1XjIw9UAofgGyOlRYkDp0zjO9VsrJUWsZI+n5ML+GvHYuVw4xAaggwsYYParaF3VFpYy2mfNSPfHKy8EPvK4WLyxATVJz3cwm239gRUwIDAQAB">
+    <em:contributor>amiable</em:contributor>
+    <em:contributor>FlashORC</em:contributor>
+    <em:localized RDF:resource="rdf:#$ihe0d3"/>
+    <em:targetApplication RDF:resource="rdf:#$nhe0d3"/>
+  </RDF:Description>
+</RDF:RDF>
