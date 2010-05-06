@@ -64,6 +64,10 @@
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/portal.png"/>
 
+			<menuitem label="&menu.label.serials;" oncommand="smart_open_url(ISKIP_URL_SERIALS);"
+				class="menuitem-iconic"
+				image="chrome://iskip/skin/classic/menuicons/serials.png"/>
+
 			<menuitem label="&menu.label.forum;" oncommand="smart_open_url(ISKIP_URL_FORUM);"
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/forum.png"/>
@@ -80,21 +84,24 @@
 
 			<menuseparator/>
 
-			<menuitem label="&menu.label.photo;" oncommand="smart_open_url(ISKIP_URL_PHOTO);"/>
+			<!--<menuitem label="&menu.label.photo;" oncommand="smart_open_url(ISKIP_URL_PHOTO);"/>-->
 			<menuitem label="&menu.label.radio;" class="menuitem-iconic" id="iskip-menu-radio"
 				oncommand="smart_open_url(ISKIP_URL_RADIO);"/>
 
 			<menuitem label="&menu.label.ftp;" oncommand="smart_open_url(ISKIP_URL_FTP);"
 					class="menuitem-iconic" id="iskip-menu-files"/>
 
-			<menu label="&menu.label.hosting;" class="menu-iconic" id="iskip-menu-hosting">
+			<menuitem label="&menu.label.hosting;" oncommand="smart_open_url(ISKIP_URL_HOSTING);"
+					class="menuitem-iconic" id="iskip-menu-files"/>
+
+			<!--<menu label="&menu.label.hosting;" class="menu-iconic" id="iskip-menu-hosting-cpanel">
       			<menupopup>
 				   	<menuitem label="&menu.label.hosting.order;" class="menuitem-iconic" id="iskip-menu-hosting-order"
 							oncommand="open_url(ISKIP_URL_HOSTING_ORDER);"/>
       				<menuitem label="&menu.label.hosting.cpanel;" class="menuitem-iconic" id="iskip-menu-hosting-cpanel"
 							oncommand="open_url(ISKIP_URL_HOSTING_CPANEL);"/>
       			</menupopup>
-    		</menu>
+    		</menu>-->
 
 		<menu label="&menu.label.contacts;" class="menu-iconic" id="iskip-menu-contacts">
       			<menupopup id="contact_menupopup">
