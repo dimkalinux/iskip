@@ -2,10 +2,6 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$ihe0d3"
-                   em:locale="ru-RU"
-                   em:name="iSkip для сети Айтим"
-                   em:description="Not Y3K ready" />
   <RDF:Description RDF:about="rdf:#$nhe0d3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
@@ -14,7 +10,7 @@
                    em:id="iskip@dimkalinux"
                    em:name="iSkip for iTeam network"
                    em:type="2"
-                   em:version="1.3.3"
+                   em:version="1.3.7"
                    em:description="Not Y3K ready"
                    em:creator="dimkalinux"
                    em:iconURL="chrome://iskip/skin/classic/web-browser.png"
@@ -27,4 +23,8 @@
     <em:localized RDF:resource="rdf:#$ihe0d3"/>
     <em:targetApplication RDF:resource="rdf:#$nhe0d3"/>
   </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$ihe0d3"
+                   em:locale="ru-RU"
+                   em:name="iSkip для сети Айтим"
+                   em:description="Not Y3K ready" />
 </RDF:RDF>

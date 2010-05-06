@@ -57,29 +57,28 @@
 
   	<popupset>
 		<menupopup id="iskip_menu">
-			<menuitem label="&menu.label.home;" class="menuitem-iconic" id="iskip-menu-home"
-				oncommand="smart_open_url(ISKIP_URL_HOME);"/>
-
 			<menuitem label="&menu.label.portal;" oncommand="smart_open_url(ISKIP_URL_PORTAL);"
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/portal.png"/>
-
-			<menuitem label="&menu.label.serials;" oncommand="smart_open_url(ISKIP_URL_SERIALS);"/>
+			<menuseparator/>
 
 			<menuitem label="&menu.label.forum;" oncommand="smart_open_url(ISKIP_URL_FORUM);"
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/forum.png"/>
-
 			<menuitem label="&menu.label.up;" oncommand="smart_open_url(ISKIP_URL_UP);"
 				class="menuitem-iconic"
 				image="chrome://iskip/skin/classic/menuicons/up.png"/>
+			<menuitem label="&menu.label.kino;" oncommand="smart_open_url(ISKIP_URL_KINO);"/>
+			<menuitem label="&menu.label.serials;" oncommand="smart_open_url(ISKIP_URL_SERIALS);"/>
+			<menuseparator/>
+
+			<menuitem label="&menu.label.home;" class="menuitem-iconic" id="iskip-menu-home"
+				oncommand="smart_open_url(ISKIP_URL_HOME);"/>
 
 			<menuitem label="&menu.label.tracker;" oncommand="smart_open_url(ISKIP_URL_TRACKER);"/>
 			<menuitem label="&menu.label.game_web;" oncommand="smart_open_url(ISKIP_URL_GAME_WEB);"/>
 			<menuitem label="&menu.label.fafa;" oncommand="smart_open_url(ISKIP_URL_FAFA);"/>
 			<menuitem label="&menu.label.iptv;" oncommand="smart_open_url(ISKIP_URL_IPTV);"/>
-
-			<menuitem label="&menu.label.kino;" oncommand="smart_open_url(ISKIP_URL_KINO);"/>
 
 			<menuitem label="&menu.label.stat;" oncommand="smart_open_url(ISKIP_URL_STAT);"
 					class="menuitem-iconic"
@@ -133,24 +132,6 @@
 				<menuitem label="&menu.label.ftp.serial;" id="iskip-menu-ftp-serial" oncommand="smart_open_url(ISKIP_URL_FTP_SERIAL);"/>
 				<menuitem label="&menu.label.ftp.anime;" id="iskip-menu-ftp-anime" oncommand="smart_open_url(ISKIP_URL_FTP_ANIME);"/>
 			</menupopup>
-    		</menu>
-
-		<menu label="&menu.label.services;" class="menu-iconic" id="iskip-menu-services">
-      			<menupopup id="services_menupopup">
-				<menuitem label="&menu.label.labs;" class="menuitem-iconic" id="iskip-menu-services-labs"
-							oncommand="smart_open_url(ISKIP_URL_LABS);"/>
-					<!--<menuseparator/>-->
-
-					<!--<menuitem label="&menu.label.mirror;" class="menuitem-iconic" id="iskip-menu-services-mirror"
-							oncommand="smart_open_url(ISKIP_URL_MIRROR);"/>-->
-					<!--<menuitem label="&menu.label.ftp.search;" class="menuitem-iconic" id="iskip-menu-services-ftp-search"
-							oncommand="smart_open_url(ISKIP_URL_FTP_SEARCH);"/>-->
-
-					<!--<menuitem label="&menu.label.bases;" class="menuitem-iconic" id="iskip-menu-services-bases"
-							oncommand="smart_open_url(ISKIP_URL_BASES);"/>-->
-
-
-      			</menupopup>
     		</menu>
 
 			<menuseparator/>

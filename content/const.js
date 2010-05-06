@@ -86,7 +86,7 @@ const ISKIP_URL_FTP_UPLOAD = "http://film.lg.ua/upload/";
 
 const ISKIP_URL_MIRROR = "http://mirror.lluga.net/";
 const ISKIP_URL_KINO = "http://film.lg.ua/";
-const ISKIP_URL_RADIO = "http://radio.lluga.net:8000/";
+const ISKIP_URL_RADIO = "http://radio.iteam.net.ua/";
 const ISKIP_URL_PHOTO = "http://photo.lluga.net/";
 const ISKIP_URL_HOME = "http://www.iteam.net.ua/";
 const ISKIP_URL_STAT = "https://stat.lluga.net/";
