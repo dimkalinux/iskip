@@ -9,12 +9,12 @@
   <RDF:Description RDF:about="rdf:#$nhe0d3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.0"
-                   em:maxVersion="3.6.*" />
+                   em:maxVersion="3.7.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="iskip@dimkalinux"
                    em:name="iSkip for iTeam network"
                    em:type="2"
-                   em:version="1.3.2"
+                   em:version="1.3.3"
                    em:description="Not Y3K ready"
                    em:creator="dimkalinux"
                    em:iconURL="chrome://iskip/skin/classic/web-browser.png"

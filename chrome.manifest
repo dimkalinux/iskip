@@ -1,8 +1,8 @@
-content	iskip	jar:chrome/iskip.jar!/content/
+content	iskip	content/
 
-locale	iskip	en-US	jar:chrome/iskip.jar!/locale/en-US/
-locale	iskip	ru-RU	jar:chrome/iskip.jar!/locale/ru-RU/
+locale	iskip	en-US	locale/en-US/
+locale	iskip	ru-RU	locale/ru-RU/
 
-skin	iskip	classic/1.0	jar:chrome/iskip.jar!/skin/
+skin	iskip	classic/1.0	skin/
 overlay	chrome://browser/content/browser.xul	chrome://iskip/content/panel.xul
 override  chrome://global/content/netError.xhtml  chrome://iskip/content/pages/netError.xhtml
